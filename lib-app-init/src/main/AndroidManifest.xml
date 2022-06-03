@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.itzheng.appinit">
+
+    <application>
+        <provider
+            android:name=".app.AppContentProvider"
+            android:authorities="${applicationId}.${projectName}.AppContentProvider"
+            android:exported="false" />
+    </application>
+</manifest>

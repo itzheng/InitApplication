@@ -1,0 +1,5 @@
+rootProject.name = "InitApplication"
+include ':app'
+include ':app-1'
+include ':apt-app-init'
+include ':lib-app-init'
