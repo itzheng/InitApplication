@@ -41,5 +41,8 @@ dependencies {
     implementation project(path: ':lib-app-init')
     annotationProcessor project(':lib-app-init')
 
+//    implementation 'com.github.itzheng:InitApplication:0.1'
+//    annotationProcessor 'com.github.itzheng.InitApplication:apt-app-init:0.1'
+
 
 }

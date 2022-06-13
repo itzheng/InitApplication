@@ -41,8 +41,12 @@ dependencies {
 
 //    implementation project(path: ':lib-init-annotation')
 //    annotationProcessor project(':lib-init-compiler')
+
     implementation project(path: ':lib-app-init')
     annotationProcessor project(':lib-app-init')
+
+//    implementation 'com.github.itzheng:InitApplication:0.1'
+//    annotationProcessor 'com.github.itzheng:InitApplication:0.1'
 
     implementation project(path: ':app-1')
 
