@@ -4,7 +4,6 @@ import android.util.Log;
 
 import org.itzheng.appinit.annotation.AppInit;
 import org.itzheng.appinit.IAppInit;
-import org.itzheng.appinit.app.AppContentProvider;
 
 
 @AppInit(priority = 3)

@@ -123,19 +123,6 @@ public class AppInitProcessor extends AbstractProcessor {
         }
     }
 
-//    private static class InitClass {
-//        public String name;
-//        public int priority;
-//
-//        public InitClass(String fullClassName, int priority) {
-//            this.name = fullClassName;
-//            this.priority = priority;
-//        }
-//
-//
-//    }
-
-//    private final static ArrayList<InitClass> mClass = new ArrayList<>();
 
     /**
      * 创建Java文件，将所有用到注解的类，
@@ -144,17 +131,9 @@ public class AppInitProcessor extends AbstractProcessor {
      * @param set
      */
     private void mkjava(Set<? extends Element> set) {
-        for (Element element : set) {
-            //将所有注解添加到集合中
-            AppInit annotation = element.getAnnotation(AppInit.class);
-            //全类名，优先级
-//            mClass.add(new InitClass(element.toString(), annotation.priority()));
-        }
         AutoConstant constant = AutoConstant.getInstance();
         String packageName = constant.AUTO_CLASS_PACKAGE_NAME;
-//        String newClassName = constant.getNewClassName(targetModuleName);
         String newClassName = constant.getNewClassName(targetModuleName);
-
 
         StringBuilder builder = new StringBuilder()
                 .append("package " + packageName + ";\n\n")

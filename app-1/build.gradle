@@ -35,14 +35,15 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-//    implementation project(path: ':lib-init-annotation')
-//    annotationProcessor project(':lib-init-compiler')
-//
     implementation project(path: ':lib-app-init')
     annotationProcessor project(':lib-app-init')
 
-//    implementation 'com.github.itzheng:InitApplication:0.1'
-//    annotationProcessor 'com.github.itzheng.InitApplication:apt-app-init:0.1'
+//    annotationProcessor 'com.github.itzheng.InitApplication:apt-app-init:0.2'
+//    implementation 'com.github.itzheng.InitApplication:apt-app-init:0.2'
+//    implementation 'com.github.itzheng.InitApplication:lib-app-init:0.2'
+
+//    implementation 'com.github.itzheng:InitApplication:0.2'
+//    annotationProcessor 'com.github.itzheng.InitApplication:apt-app-init:0.2'
 
 
 }

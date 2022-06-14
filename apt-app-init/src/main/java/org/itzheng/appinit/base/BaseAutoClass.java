@@ -42,17 +42,4 @@ public abstract class BaseAutoClass {
         return mInitClasses;
     }
 
-//    /**
-//     * 用于保存所有带注解的类
-//     */
-//    private class _InitClass {
-//        public String name;
-//        public int priority;
-//
-//        public _InitClass(String fullClassName, int priority) {
-//            this.name = fullClassName;
-//            this.priority = priority;
-//        }
-//    }
-
 }

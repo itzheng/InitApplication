@@ -36,16 +36,11 @@ public class InitAppClass {
                 if (result != null) {
                     allResult.addAll(result);
                 }
-//                invokeMethodNoArgs(cls, "addAll");
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
 
-//        for (HashMap<String, Object> map : allResult) {
-//            Log.w(TAG, "allResult: " + map.get(autoConstant.AUTO_CLASS_FIELD_CLASS_NAME));
-//            Log.w(TAG, "allResult: " + map.get(autoConstant.AUTO_CLASS_FIELD_PRIORITY));
-//        }
         Collections.sort(allResult, new Comparator<HashMap<String, Object>>() {
             @Override
             public int compare(HashMap<String, Object> o1, HashMap<String, Object> o2) {
@@ -97,12 +92,6 @@ public class InitAppClass {
     private static class Holder {
         public static final InitAppClass _instance = new InitAppClass();
     }
-
-//    private void get() {
-//        Context context = AppContentProvider.getApplicationContext();
-//        PathClassLoader pathClassLoader = new PathClassLoader(context.getPackageCodePath(),
-//                context.getClassLoader());
-//    }
 
     /**
      * 执行无参方法

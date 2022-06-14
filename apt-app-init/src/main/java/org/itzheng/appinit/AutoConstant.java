@@ -57,12 +57,11 @@ public final class AutoConstant {
      */
     private String getCurrentDate() {
         Date date = new Date();
-        //time 是 13 位数 ，保留7位数足够了
+        //time 是 13 位数 ，保留 7 位数足够了
         return date.getTime() % 10_000_000 + "";
     }
 
     private String getPackageName() {
-//        return getClass().getPackage().toString();
         return "org.itzheng.appinit.annotations.auto";
     }
 
